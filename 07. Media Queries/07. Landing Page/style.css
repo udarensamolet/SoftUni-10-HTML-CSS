@@ -1,0 +1,356 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+}
+
+.site-header-title h1 {
+  font-family: Georgia, serif;
+  font-size: 2em;
+  color: rgb(128, 0, 128);
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.site-header-title p {
+  color: rgb(68, 68, 93);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 0.62em;
+  line-height: 1.9;
+}
+
+.site-header-title {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0mm;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 130px;
+}
+
+.site-header-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-header-nav a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.site-header-nav li {
+  padding: 20px;
+}
+
+.site-header-nav li:nth-child(5) {
+  padding-right: 0;
+}
+
+.main-header {
+  display: flex;
+  margin: 0 230px;
+  justify-content: space-evenly;
+}
+
+.main-header h2 {
+  font-family: Georgia, serif;
+  
+}
+
+.main-header-info {
+  width: 50%;
+}
+
+.main-header-info-btn {
+  padding: 10px;
+}
+
+.main-header-icon {
+  margin-left: 50px;
+  width: 20%;
+  justify-self: center;
+  align-self: center;
+}
+
+.main-header-icon i {
+  font-size: 10rem;
+}
+.team-info {
+    margin-top: 50px;
+}
+.team-info h2 {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.team-info h2::after {
+  content: "";
+  border-bottom: 2px solid black;
+  width: 350px;
+}
+
+.team-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 130px;
+}
+
+.team-info-person-img {
+  text-align: center;
+}
+
+.team-info-person-img img {
+  border-radius: 50%;
+  width: 50%;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.team-info-wrapper article {
+  margin: 0 60px;
+}
+
+.team-info-person-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.team-info-person-occupation {
+  text-align: center;
+  margin-top: 0;
+}
+
+.team-info-person-quote {
+  text-align: center;
+  font-style: italic;
+}
+
+.subscription {
+  background-color: rgb(104, 52, 123);
+  height: 30vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.subscription h3 {
+  font-family: Georgia;
+  font-size: 1.5em;
+}
+
+.subscription input {
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.subscription button {
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  padding: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials h2 {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.testimonials h2::after {
+  content: "";
+  border-bottom: 2px solid black;
+  width: 350px;
+}
+
+.testimonials-wrapper {
+  margin: 0 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.testimonial {
+  margin: 0 60px;
+  width: 25%;
+}
+
+.testimonial-img {
+  text-align: center;
+}
+
+.testimonial-img img {
+    border-radius: 50%;
+    width: 30%;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.testimonial-text {
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.testimonial-occupation {
+    margin-top: 0;
+    text-align: center;
+}
+
+main {
+    
+    box-shadow: 0px 15px 10px -15px #111;    
+}
+
+footer {
+    margin: 0 130px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 40%;
+    margin-left: 80px;
+}
+
+.footer-info h2 {
+    font-family: Georgia, serif;
+}
+
+.footer-sitemap {
+    width: 30%
+}
+
+.footer-sitemap-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.footer-sitemap-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-sitemap-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-contacts {
+    width: 40%;
+}
+
+.footer-contacts-icon {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 0;
+}
+
+.footer-contacts-icon i {
+    margin: 0 10px;
+    padding: 0;
+    font-size: 15px;
+}
+
+.footer-contacts-icon-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts-icon p {
+    margin: 0;
+}
+
+.fa-phone-volume::before {
+    margin-right: 4px;
+}
+
+.site-header-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+
+    body {
+        width: 100vw;
+    }
+    header, main, footer{
+        margin: 50px;
+    }
+
+    .subscription {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-info-wrapper article {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 35%;
+    }
+
+    .main-header {
+        margin: 50px;
+    }
+
+    .main-header-icon {
+        width: 20%;
+    }
+
+    .main-header-info {
+        width: 60%;
+    }
+
+    .site-header-nav {
+        display: none;
+    }
+
+    .site-header {
+        margin-left: 50px;
+        margin-right: 50px;
+        align-items: center;
+    }
+
+    .site-header-menu {
+        display: relative;
+        font-weight: bold;
+    }
+}

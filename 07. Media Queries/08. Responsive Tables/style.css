@@ -1,0 +1,84 @@
+/*html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}*/
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  background-color: rgb(238, 238, 238);
+}
+
+th {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+tr:nth-child(2) {
+  background-color: rgb(241, 241, 241);
+}
+
+tr:nth-child(3) {
+  background-color: rgb(255, 255, 255);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  /* forces table to not be like tables anymore */
+  table,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  tr {
+    padding: 0;
+    margin: 0;
+  }
+
+  td {
+      border: 1px solid rgb(209,209,209);
+      border-bottom: none;
+      padding: 10px;
+  }
+
+  td:last-child {
+      border-bottom: 1px solid rgb(209,209,209);
+  }
+
+  tr:nth-child(1) {
+    display: none;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(238, 238, 238);
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(255, 255, 255);
+  }
+
+  td:nth-of-type(1):before {
+    content: "First Name";
+    padding-right: 10px;
+  }
+  td:nth-of-type(2):before {
+    content: "Last Name";
+    padding-right: 10px;
+  }
+  td:nth-of-type(3):before {
+    content: "Job Title";
+    padding-right: 10px;
+  }
+}
